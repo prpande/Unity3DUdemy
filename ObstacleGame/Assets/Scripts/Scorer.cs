@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Scorer : MonoBehaviour
 {
+    [SerializeField] string hitTag = "Hit";
     int score;
     // Start is called before the first frame update
     void Start()
@@ -13,7 +14,11 @@ public class Scorer : MonoBehaviour
 
     private void OnCollisionEnter(Collision other) 
     {
-        score++;
-        Debug.Log($"Score: {score}");
+        if (other.gameObject.tag != hitTag)
+        {
+            other.gameObject.tag = hitTag;
+            score++;
+            Debug.Log($"Score: {score}");
+        }
     }
 }
