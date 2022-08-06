@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4072440211539682037}
   - component: {fileID: 4950005628232836995}
   - component: {fileID: 3185862501563959278}
-  - component: {fileID: 2994187940113089755}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -84,20 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &2994187940113089755
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2160540752280087690}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5834340041635504638
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,6 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9102296018759071463}
+  - component: {fileID: 8332400841841103357}
   m_Layer: 0
   m_Name: Thruster
   m_TagString: Untagged
@@ -131,6 +117,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8332400841841103357
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5834340041635504638}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 4, z: 0.5}
+  m_Center: {x: -0.7, y: -5, z: 0}
 --- !u!1 &8660416925087413525
 GameObject:
   m_ObjectHideFlags: 0
@@ -142,7 +141,6 @@ GameObject:
   - component: {fileID: 1062779105623641056}
   - component: {fileID: 614860506052602241}
   - component: {fileID: 2594209805861730110}
-  - component: {fileID: 2451590165827119075}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -215,17 +213,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &2451590165827119075
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8660416925087413525}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
